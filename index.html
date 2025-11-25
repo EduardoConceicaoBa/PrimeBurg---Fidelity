@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>PrimeBurger Fidelity</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- HEADER + LOGO ANIMADO -->
+    <header class="header">
+        <div class="logo-wrap">
+            <div class="burger bounce">
+                <div class="bun top"></div>
+                <div class="lettuce"></div>
+                <div class="cheese"></div>
+                <div class="meat"></div>
+                <div class="bun bottom"></div>
+            </div>
+            <div class="brand">
+                <h1>PrimeBurger</h1>
+                <p class="tag">Fidelity • Programa Premium</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- TABELA DE PLANOS (com os mesmos preços do projeto) -->
+    <section class="pricingSection">
+        <h2>Planos & Valores</h2>
+
+        <table class="pricing-table">
+            <thead>
+                <tr>
+                    <th>Plano</th>
+                    <th>Preço Mensal</th>
+                    <th>Benefícios / Regras</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Bronze</td>
+                    <td>R$ 29,90</td>
+                    <td>
+                        &gt; R$ 150 → 8% desconto<br>
+                        &gt; R$ 300 → 12% desconto<br>
+                        &gt; R$ 500 → Promoção para Prata<br>
+                        &lt; R$ 50 → Engajamento baixo
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Prata</td>
+                    <td>R$ 49,90</td>
+                    <td>
+                        &gt; R$ 400 → 10% desconto<br>
+                        &gt; R$ 700 → 18% desconto<br>
+                        &gt; R$ 1200 → Promoção para Ouro<br>
+                        &lt; R$ 150 → Risco de voltar para Bronze
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Ouro</td>
+                    <td>R$ 89,90</td>
+                    <td>
+                        &gt; R$ 800 → 15% desconto<br>
+                        &gt; R$ 1200 → 25% desconto<br>
+                        &gt; R$ 2500 → Combo Vitalício (1 mês)<br>
+                        &lt; R$ 300 → Risco de voltar para Prata
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- SELEÇÃO DE PLANO -->
+    <section id="planSection" class="panel">
+        <h2>Escolha Seu Plano</h2>
+        <div class="plan-buttons">
+            <button class="card bronze" onclick="selecionarPlano('Bronze')">
+                <strong>Bronze</strong><br><small>R$ 29,90</small>
+            </button>
+            <button class="card prata" onclick="selecionarPlano('Prata')">
+                <strong>Prata</strong><br><small>R$ 49,90</small>
+            </button>
+            <button class="card ouro" onclick="selecionarPlano('Ouro')">
+                <strong>Ouro</strong><br><small>R$ 89,90</small>
+            </button>
+        </div>
+    </section>
+
+    <!-- LOGIN -->
+    <section id="loginSection" class="panel hidden">
+        <h2>Login do Cliente</h2>
+        <p>Plano selecionado: <strong><span id="planoEscolhido"></span></strong></p>
+        <form id="loginForm">
+            <input id="username" type="text" placeholder="Usuário (qualquer valor aceita)" autocomplete="off"/>
+            <input id="password" type="password" placeholder="Senha (qualquer valor aceita)" autocomplete="off"/>
+            <button type="submit">Entrar</button>
+        </form>
+    </section>
+
+    <!-- VERIFICAÇÃO DE IDADE -->
+    <section id="idadeSection" class="panel hidden">
+        <h2>Verificação de Idade</h2>
+        <input id="idadeInput" type="number" placeholder="Digite sua idade"/>
+        <button id="verificarBtn">Verificar</button>
+        <p id="resultado" class="output"></p>
+    </section>
+
+    <!-- GASTO MENSAL -->
+    <section id="gastoSection" class="panel hidden">
+        <h2>Gasto Mensal</h2>
+        <input id="nomeInput" type="text" placeholder="Nome do cliente (ex: João)"/>
+        <input id="gastoInput" type="number" placeholder="Quanto gastou este mês? (R$)"/>
+        <button id="calcularBtn">Calcular Benefício</button>
+        <p id="gastoResultado" class="output"></p>
+    </section>
+
+
+    <button id="proximoClienteBtn" class="hidden">Atender Próximo Cliente</button>
+
+    <footer class="footer">
+        <p>PrimeBurger Fidelity — Feito com sabor &amp; código</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

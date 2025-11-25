@@ -1,0 +1,245 @@
+/* ---------- Paleta e reset simples ---------- */
+* { box-sizing: border-box; }
+body {
+    margin: 0;
+    font-family: "Poppins", "Segoe UI", Arial, sans-serif;
+    background: linear-gradient(180deg,#1b120e 0%, #2b1a12 100%);
+    color: #f7e9d7;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+    text-align: center;
+}
+
+/* ---------- HEADER / LOGO ---------- */
+.header {
+    padding: 28px 16px;
+    border-bottom: 3px solid rgba(196,154,108,0.15);
+    background: linear-gradient(90deg,#2e140c 0%, #3b1b12 100%);
+}
+
+.logo-wrap {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:20px;
+}
+
+.brand h1 {
+    margin: 0;
+    font-size: 28px;
+    color: #f4d29a;
+    letter-spacing: 1px;
+}
+
+.brand .tag {
+    margin: 4px 0 0 0;
+    font-size: 12px;
+    color: #d9b983;
+}
+
+/* ---------- HAMBURGUER ANIMADO ---------- */
+.burger {
+    width: 110px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    transform-origin: center;
+    animation: float 2.5s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% { transform: translateY(0) rotate(-1deg); }
+    50% { transform: translateY(-10px) rotate(1deg); }
+    100% { transform: translateY(0) rotate(-1deg); }
+}
+
+.bun {
+    width: 110px;
+    height: 26px;
+    background: linear-gradient(#e3ac66,#c98c46);
+    border-radius: 40px;
+    box-shadow: inset 0 -6px 8px rgba(0,0,0,0.2);
+}
+.bun.top { margin-bottom:6px; }
+.bun.bottom { margin-top:6px; }
+
+.lettuce {
+    width: 102px;
+    height: 12px;
+    background: linear-gradient(#74b95e,#4fa93a);
+    border-radius: 8px;
+    margin-bottom:4px;
+    box-shadow: inset 0 -3px 4px rgba(0,0,0,0.12);
+}
+
+.cheese {
+    width: 96px;
+    height: 10px;
+    background: linear-gradient(#ffd865,#f8c441);
+    border-radius:6px;
+    margin-bottom:4px;
+}
+
+.meat {
+    width: 106px;
+    height: 18px;
+    background: linear-gradient(#7a3b1e,#5b2913);
+    border-radius:8px;
+    box-shadow: inset 0 -3px 6px rgba(0,0,0,0.25);
+}
+
+/* ---------- TABELA DE PREÇOS ---------- */
+.pricingSection {
+    margin: 28px auto;
+    width: 92%;
+    max-width: 980px;
+    padding: 8px;
+}
+
+.pricingSection h2 {
+    color: #f7e9d7;
+    margin-bottom: 12px;
+    font-size: 22px;
+}
+
+.pricing-table {
+    width: 100%;
+    border-collapse: collapse;
+    overflow: hidden;
+    border-radius: 14px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+.pricing-table thead th {
+    background: linear-gradient(90deg,#6e2d18,#4e1a10);
+    padding: 14px;
+    color: #ffd9a8;
+    font-size: 15px;
+    text-align:left;
+}
+
+.pricing-table tbody td {
+    background: #3a2418;
+    padding: 14px;
+    color: #f7e9d7;
+    border-bottom: 1px solid rgba(196,154,108,0.08);
+    vertical-align: top;
+    text-align:left;
+}
+
+.pricing-table tbody tr:hover td {
+    background: linear-gradient(90deg,#3f2a1c,#372217);
+}
+
+/* ---------- PANELS / CARDS ---------- */
+.panel {
+    width: 92%;
+    max-width: 760px;
+    margin: 26px auto;
+    padding: 18px;
+    background: linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.01));
+    border-radius: 14px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+    text-align:center;
+}
+
+.plan-buttons {
+    display:flex;
+    justify-content:center;
+    gap: 18px;
+    flex-wrap:wrap;
+    margin-top: 12px;
+}
+
+.card {
+    min-width: 160px;
+    padding: 14px;
+    border-radius: 12px;
+    color: #27140f;
+    background: #f4d29a;
+    cursor: pointer;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.35);
+    transition: transform .18s ease, box-shadow .18s ease;
+}
+
+.card:hover { transform: translateY(-8px); box-shadow: 0 16px 36px rgba(0,0,0,0.45); }
+
+.card.bronze  { background: linear-gradient(#e5c7b0, #c9a48a); }
+.card.prata   { background: linear-gradient(#e7edf2, #c6d3df); color: #2b2b2b; }
+.card.ouro    { background: linear-gradient(#fff0b8, #f6d77f); }
+
+/* ---------- FORM ELEMENTS ---------- */
+input[type="text"], input[type="password"], input[type="number"] {
+    width: calc(100% - 24px);
+    max-width: 520px;
+    padding: 12px;
+    margin: 8px auto;
+    display:block;
+    border-radius: 10px;
+    border: none;
+    font-size: 15px;
+    background: rgba(255,255,255,0.06);
+    color: #f7e9d7;
+    outline: none;
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.02);
+}
+
+button {
+    display:inline-block;
+    padding: 12px 18px;
+    margin: 10px auto;
+    border-radius: 10px;
+    border: none;
+    background: #c49a6c;
+    color: #2b160f;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background .12s ease, transform .12s ease;
+}
+
+button:hover { background: #e6caa1; transform: translateY(-2px); }
+
+/* OUTPUT */
+.output {
+    margin-top: 12px;
+    font-weight: 700;
+    color: #ffd9a8;
+}
+
+/* hidden helper */
+.hidden { display: none; }
+
+/* footer */
+.footer {
+    margin: 36px 0 16px;
+    color: rgba(255,221,150,0.8);
+    font-size: 13px;
+}
+
+/* responsive */
+@media (max-width:720px) {
+    .logo-wrap { flex-direction: column; gap: 8px; }
+    .brand h1 { font-size: 20px; }
+    .pricing-table thead th, .pricing-table tbody td { font-size: 13px; padding: 10px; }
+    .card { min-width: 130px; }
+}
+/* ---------- ANIMAÇÃO DE DESCONTO (pulso verde) ---------- */
+@keyframes descontoPulse {
+    0%   { transform: scale(1);     text-shadow: 0 0 0px #9de28a; }
+    50%  { transform: scale(1.07);  text-shadow: 0 0 12px #9de28a; }
+    100% { transform: scale(1);     text-shadow: 0 0 0px #9de28a; }
+}
+
+.animDesconto {
+    animation: descontoPulse 1s ease-in-out 2;
+}
+
+@keyframes promoShine {
+    0%   { transform: translateY(0);   text-shadow: 0 0 0px gold; }
+    50%  { transform: translateY(-6px); text-shadow: 0 0 16px gold; }
+    100% { transform: translateY(0);   text-shadow: 0 0 0px gold; }
+}
+
+.animPromocao {
+    animation: promoShine 1.2s ease-out 2;
+}
