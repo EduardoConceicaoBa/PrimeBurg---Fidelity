@@ -21,7 +21,6 @@ O projeto é composto por três arquivos principais:
 - `index.html` — Estrutura da página e organização das seções;  
 - `style.css` — Estilização, cores, layout e identidade visual;  
 - `script.js` — Lógica de funcionamento, como acumular pontos, atualizar saldo e interatividade;  
-- `assets/` — Imagens e ícones utilizados na interface.
 
 ---
 
