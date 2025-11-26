@@ -1,6 +1,7 @@
 # 🍔 PrimeBurg Fidelity — Explicação do Projeto
 
 ---
+Detalhe: Eu criei um código Python desse projeto e depois converti para JavaScript!
 
 🎯 **Objetivo do Projeto**  
 O objetivo do **PrimeBurg Fidelity** é oferecer um sistema de fidelidade digital simples e prático para restaurantes. Ele permite que clientes acumulem pontos, resgatem recompensas e aproveitem promoções de forma organizada e intuitiva.  
