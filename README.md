@@ -1,60 +1,43 @@
-# 🍔 PrimeBurg Fidelity — Explicação do Projeto
+# 🍔 PrimeBurg Fidelity | Web Edition
 
----
-Detalhe: Eu criei um código Python desse projeto e depois converti para JavaScript!
-
-🎯 **Objetivo do Projeto**  
-O objetivo do **PrimeBurg Fidelity** é oferecer um sistema de fidelidade digital simples e prático para restaurantes. Ele permite que clientes acumulem pontos, resgatem recompensas e aproveitem promoções de forma organizada e intuitiva.  
-
-O usuário pode:  
-- Acumular pontos automaticamente a cada compra;  
-- Consultar o saldo de pontos a qualquer momento;  
-- Resgatar recompensas e benefícios;  
-- Visualizar promoções e ofertas especiais;  
-- Ter uma interface amigável e responsiva.
+Este projeto é a evolução do meu sistema de fidelidade originalmente desenvolvido em Python. Aqui, a lógica de benefícios foi portada para **JavaScript** e integrada a uma interface web moderna e responsiva.
 
 ---
 
-📁 **O que o projeto contém**  
-O projeto é composto por três arquivos principais:  
-
-- `index.html` — Estrutura da página e organização das seções;  
-- `style.css` — Estilização, cores, layout e identidade visual;  
-- `script.js` — Lógica de funcionamento, como acumular pontos, atualizar saldo e interatividade;  
-
----
-
-🧠 **Como o Sistema Funciona**  
-
-✔️ **Acúmulo de Pontos**  
-- Cada compra registrada no sistema adiciona pontos automaticamente ao saldo do cliente;  
-- O saldo é atualizado em tempo real na interface.  
-
-💰 **Consulta de Saldo**  
-- O cliente pode verificar a quantidade de pontos disponíveis a qualquer momento;  
-- Pontos insuficientes para resgate exibem uma mensagem de alerta.  
-
-🎁 **Resgate de Recompensas**  
-- Permite resgatar benefícios de acordo com a quantidade de pontos acumulados;  
-- Ao resgatar, os pontos correspondentes são debitados do saldo.  
-
-🛍 **Promoções e Ofertas**  
-- Clientes podem visualizar promoções ativas;  
-- Interface clara que indica quais recompensas estão disponíveis.
+### 🔄 A Evolução (Python ➡️ JavaScript)
+O objetivo desta versão foi elevar o projeto de um script de terminal para uma aplicação web funcional, focando em:
+* **Interatividade:** Feedback visual instantâneo para o usuário.
+* **UX/UI:** Design pensado para facilitar a entrada de dados.
+* **Manipulação de DOM:** Uso de JavaScript para atualizar a interface em tempo real com base nos cálculos de bônus.
 
 ---
 
-🤓 **Para Quem Esse Sistema é Indicado**  
-- Restaurantes que desejam implementar um programa de fidelidade digital;  
-- Clientes que desejam acompanhar seus pontos e resgatar benefícios facilmente;  
-- Equipes que buscam uma solução simples, prática e escalável para gerenciar recompensas.
+### 🎨 Interface e Design
+O design foi construído focado na experiência do cliente da hamburgueria:
+* **Cores Temáticas:** Paleta que remete ao setor alimentício (Fast Food).
+* **Responsividade:** O sistema adapta-se a diferentes tamanhos de tela (Mobile e Desktop).
 
 ---
 
-🚀 **Potenciais Evoluções**  
-O projeto pode ser expandido futuramente com:  
-- 🔐 Sistema de login com autenticação;  
-- 💾 Integração com banco de dados real;  
-- 📊 Dashboard administrativo para acompanhar clientes, pontos e promoções;  
-- 🔔 Notificações automáticas de promoções;  
-- 🌐 Versão mobile aprimorada para melhor experiência do usuário.  
+### 🛠️ Tecnologias Utilizadas
+<div align="left">
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JS" />
+  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5" />
+  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3" />
+</div>
+
+---
+
+### 🧠 Lógica de Benefícios Mantida
+O sistema continua calculando as faixas de descontos e upgrades (Bronze, Prata e Ouro), mas agora exibe os resultados de forma gráfica e amigável.
+
+---
+
+### 🚀 Como Visualizar
+Como este é um projeto Front-end, você pode visualizá-lo diretamente:
+1. Clone o repositório.
+2. Abra o arquivo `index.html` no seu navegador.
+*(Dica: Se você usa o GitHub Pages, coloque o link direto aqui para a pessoa ver o site rodando!)*
+
+---
+*Este projeto marca meu início no desenvolvimento Web e a transição da lógica pura para interfaces reais.*
