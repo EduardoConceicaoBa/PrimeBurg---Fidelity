@@ -40,4 +40,4 @@ Como este é um projeto Front-end, você pode visualizá-lo diretamente:
 *(Dica: Se você usa o GitHub Pages, coloque o link direto aqui para a pessoa ver o site rodando!)*
 
 ---
-*Este projeto marca meu início no desenvolvimento Web e a transição da lógica pura para interfaces reais.*
+
